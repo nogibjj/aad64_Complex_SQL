@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 
 # Define a global variable for the log file
-LOG_FILE = "data.sql"
+LOG_FILE = "results.md"
 
 
 def log_query(query, result="none"):
@@ -32,3 +32,4 @@ def general_query(query):
         result = c.fetchall()
         c.close()
     log_query(f"{query}", result)
+    return result

@@ -13,11 +13,4 @@ JOIN population_by_country_2020 ON population_by_country_2020.Country = meat_con
 SELECT p.Country, p.Population_2020, p.Yearly_Change, m.Meat_consumption
 FROM population_by_country_2020 p
 JOIN meat_consumption m ON p.Country = m.Country
-ORDER BY m.Meat_consumption DESC;```sql
-SELECT * FROM test_table
-```
-
-```response from databricks
-[(1, 'John', 25), (2, 'Jane', 30)]
-```
-
+ORDER BY m.Meat_consumption DESC;
