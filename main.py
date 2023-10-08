@@ -2,7 +2,7 @@
 ETL-Query script
 """
 import fire
-from mylib.data import general_query, run_queries_from_file
+from mylib.data import run_queries_from_file
 
 
 def final():
